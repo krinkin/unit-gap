@@ -1,0 +1,3302 @@
+{
+  "n": 7,
+  "total_candidates": 508,
+  "total_tested": 60,
+  "total_opt7": 60,
+  "gap0_count": 0,
+  "gap1_count": 60,
+  "skipped_opt_low": 0,
+  "skipped_opt_high": 0,
+  "skipped_timeout": 0,
+  "elapsed_seconds": 380.4703619480133,
+  "circuits": [
+    {
+      "name": "CSE_basic",
+      "tt_hex": "0x7f77ffff7f007f000000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          14,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "same-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "same-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "CSE_fanout2_variant",
+      "tt_hex": "0x800088008080ffffffffffffffffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          21,
+          25
+        ],
+        [
+          14,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "same-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "same-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "CSE_outvar_0",
+      "tt_hex": "0x8088000080ff80ff0000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          8,
+          23
+        ],
+        [
+          21,
+          25
+        ],
+        [
+          14,
+          26
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "same-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "same-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "CSE_outvar_1",
+      "tt_hex": "0x7f77ffff7f007f00ffffffffffffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          21,
+          25
+        ],
+        [
+          14,
+          26
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "same-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "same-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "CSE_variant1",
+      "tt_hex": "0x7f5fffff7f007f000000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          6
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          14,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "same-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            2
+          ],
+          "polarity_type": "same-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "dual_pol_MUX",
+      "tt_hex": "0xf7800000000000000000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          12,
+          14
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          20,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 5,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "dual_pol_deep",
+      "tt_hex": "0xff7f8000000000000000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          6
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          21,
+          26
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            2
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "dual_pol_variant3",
+      "tt_hex": "0x087fffffffffffff0000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          18,
+          24
+        ],
+        [
+          14,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 8,
+          "shared_name": "g0",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x4500750055005500ff00ff00ff00ff00",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          5,
+          6
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          14,
+          21
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          22,
+          25
+        ],
+        [
+          8,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            2,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffbbffbbffbbfffbffbbffbbffbbff3b",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          11
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          9,
+          21
+        ],
+        [
+          4,
+          24
+        ],
+        [
+          23,
+          26
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            4,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffff55d5ffff5515ffffffffffffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            2,
+            3
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffeeffeeffeeffeefeeeffefffeeffee",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          12,
+          15
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          5,
+          23
+        ],
+        [
+          24,
+          26
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            5,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x000000000000000000d000f020f000f0",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          15
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          12,
+          20
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            4
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x00003333333333330002331333333333",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          9
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          12,
+          25
+        ],
+        [
+          5,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            3,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffff0000ffff0000ffffdf02ffffff00",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          5
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          15,
+          25
+        ],
+        [
+          11,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x00000000030303030000000003010323",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          15
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            3,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x5555f777555557775555777755557777",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          8,
+          14
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          11,
+          24
+        ],
+        [
+          2,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x0f2fffffdfffffff0f0fffffffffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          12,
+          21
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          18,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 5,
+          "shared_node": 10,
+          "shared_name": "g2",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xf0f0f0f0f0f0f4f0f0f0fffff0f0f7ff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          8
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          11,
+          23
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          7,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            3,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xbfffffff8f0f0f0f0000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          10
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          6,
+          23
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          14,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            3,
+            4
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x0f0f0f0f8f0f0f0f0f0f0f0fff7fffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          10
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          13,
+          23
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          6,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            4
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x44445444444444444555555555555555",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          8
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          3,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x00aa00aaffffffff002a80aaffffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          6
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          2,
+          23
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          12,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            2,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffd5ff55ff00ff00ff15ff55ff00ff00",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          10
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          12,
+          25
+        ],
+        [
+          9,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            2,
+            4
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xf0f0f8f0f0f0f0f0f4fcfcfcfcfcfcfc",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          8
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          4,
+          21
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          22,
+          25
+        ],
+        [
+          7,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            3,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffffffffff00ffffffbfffffff04ffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          15
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 5,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffff7233ffff0000ffff3333ffff0000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          3,
+          14
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          12,
+          24
+        ],
+        [
+          11,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            3,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xfffd000000080000ffff0000ffff0000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          9
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          18
+        ],
+        [
+          14,
+          21
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          22,
+          25
+        ],
+        [
+          10,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            2,
+            3
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x000c000c080c0004000c000c000c000c",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          14
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          8,
+          19
+        ],
+        [
+          4,
+          21
+        ],
+        [
+          7,
+          22
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            5,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xfffffffff4f0f0f0fffffffffeffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          3,
+          10
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          20,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            3,
+            4
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 5,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x00000000002000002202222222222222",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          10
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          5,
+          22
+        ],
+        [
+          25,
+          26
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            4
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x3333333333333333b3bbbfbbbbbbbbbb",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          8,
+          12
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          15,
+          25
+        ],
+        [
+          4,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xf2f0fef0faf0faf0faf0faf0faf0faf0",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          14
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          8,
+          23
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          7,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            5,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xfff7ffffffffffffff80ffffff00ffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          12
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          10,
+          21
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          9,
+          26
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffffffffffffffff0f0f0f4fffbfffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          11,
+          20
+        ],
+        [
+          13,
+          21
+        ],
+        [
+          18,
+          25
+        ],
+        [
+          23,
+          26
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            3
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x00ff80ffffffbfffffffffffffffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          6
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            2,
+            4
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x00807fff000000000000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          6
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          18,
+          23
+        ],
+        [
+          10,
+          21
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            2
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x000088880000a8880000888800000888",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          8
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          5,
+          21
+        ],
+        [
+          15,
+          20
+        ],
+        [
+          18,
+          23
+        ],
+        [
+          25,
+          26
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xaaaa0000a2aa00080000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          7,
+          13
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          11,
+          21
+        ],
+        [
+          18,
+          23
+        ],
+        [
+          25,
+          26
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            2,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xa8a8a8a8a8aaa8a0a8a8a8a8a8a8a8a8",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          9,
+          14
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          7,
+          25
+        ],
+        [
+          2,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            3,
+            5,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x33333333333333331030323030303030",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          8
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          15,
+          25
+        ],
+        [
+          5,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            3,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x0f000f0f0f080f0d0f000f0f0f000f0f",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          13
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          11,
+          19
+        ],
+        [
+          4,
+          18
+        ],
+        [
+          9,
+          21
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          7,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            5,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x00000000ff72ff3300000000ff33ff33",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          3,
+          14
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          9,
+          25
+        ],
+        [
+          13,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            4,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x5777f777555555557777777755555555",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          14
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          2,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x0000fbfa0000eafa0000fafa0000fafa",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          5,
+          14
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          3,
+          23
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          11,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            3,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xdddddddd55555555dddd5fdd55555555",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          8,
+          15
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          12,
+          25
+        ],
+        [
+          2,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            3,
+            4,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xf0f0f0b0004000000000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          3,
+          4
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          20,
+          26
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            3
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 5,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xaa00aa00ea00aa00ff00ff00ef00ff00",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          10
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          8,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            4,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffbfffbbffbbffbbffbaffbbffbbffbb",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          7,
+          10
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          5,
+          19
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          9,
+          21
+        ],
+        [
+          3,
+          23
+        ],
+        [
+          24,
+          26
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            4,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffffffffffffffff0b0f0f0f00000400",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          7,
+          25
+        ],
+        [
+          15,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            3
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xfcfefefefffefefefefefefefefefefe",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          8,
+          10
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          7,
+          21
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          22,
+          26
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            3,
+            4,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x20002020202020202030202020202020",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          5,
+          6
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          14,
+          20
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          16,
+          25
+        ],
+        [
+          23,
+          26
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            3,
+            4,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x50005000500050005040100050005000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          15,
+          18
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          10,
+          20
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          16,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            5,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 5,
+          "shared_node": 10,
+          "shared_name": "g2",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x04ffffff00fbffff0000000000000000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          9,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          10,
+          24
+        ],
+        [
+          14,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            2
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x0000aaaa0000ffff0000aa3a0000ffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          9,
+          15
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          4,
+          18
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          12,
+          25
+        ],
+        [
+          11,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffffffffffffffefffffffffccccccec",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          9,
+          11
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          13,
+          26
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            4
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xbfbbbbbbfffffbffbbbbbbbbffffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          7,
+          8
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          20,
+          23
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          24,
+          27
+        ]
+      ],
+      "out_lit": 29,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            2,
+            3,
+            6
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x000000002aaaeaaa00000000ffffffff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          6,
+          8
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          14,
+          23
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          13,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            1,
+            2,
+            3
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0x0000000000000200000000000000dfff",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          8
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          24,
+          26
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            3
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    },
+    {
+      "name": "random_deep",
+      "tt_hex": "0xffff000080000000ffff0000f7ff0000",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          8
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          13,
+          24
+        ],
+        [
+          10,
+          27
+        ]
+      ],
+      "out_lit": 28,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            3
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 4,
+          "shared_node": 9,
+          "shared_name": "g1",
+          "inflection": "MUX"
+        }
+      ]
+    }
+  ]
+}

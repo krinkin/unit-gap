@@ -1,0 +1,326 @@
+{
+  "n": 6,
+  "total_candidates": 6,
+  "total_solved": 6,
+  "gap1_count": 6,
+  "circuits": [
+    {
+      "name": "CSE_basic",
+      "tt": 9185091437857898240,
+      "tt_hex": "0x7f77ffff7f007f00",
+      "opt": 6,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          12,
+          21
+        ],
+        [
+          19,
+          23
+        ]
+      ],
+      "out_lit": 25,
+      "mechanism": "same-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "same-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "CSE_variant1",
+      "tt": 9178336038416842496,
+      "tt_hex": "0x7f5fffff7f007f00",
+      "opt": 6,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          21,
+          23
+        ]
+      ],
+      "out_lit": 25,
+      "mechanism": "same-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            2
+          ],
+          "polarity_type": "same-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "dual_pol_MUX",
+      "tt": 17834254524387164160,
+      "tt_hex": "0xf780000000000000",
+      "opt": 6,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          20,
+          23
+        ]
+      ],
+      "out_lit": 24,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "dual_pol_deep",
+      "tt": 18410574539202232320,
+      "tt_hex": "0xff7f800000000000",
+      "opt": 6,
+      "gap": 1,
+      "gates": [
+        [
+          4,
+          6
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          12,
+          21
+        ],
+        [
+          19,
+          22
+        ]
+      ],
+      "out_lit": 24,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 1,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            2
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "CSE_fanout2_variant",
+      "tt": 9223222501117460480,
+      "tt_hex": "0x7fff77ff7f7f0000",
+      "opt": 6,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          10,
+          17
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          12,
+          21
+        ],
+        [
+          19,
+          23
+        ]
+      ],
+      "out_lit": 25,
+      "mechanism": "same-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 0,
+          "depth": -1,
+          "pi_inputs": [
+            0,
+            1
+          ],
+          "polarity_type": "same-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": []
+    },
+    {
+      "name": "XOR_products",
+      "tt": 9187484529235886208,
+      "tt_hex": "0x7f80808080808080",
+      "opt": 7,
+      "gap": 1,
+      "gates": [
+        [
+          2,
+          4
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          18,
+          20
+        ],
+        [
+          19,
+          21
+        ],
+        [
+          23,
+          25
+        ]
+      ],
+      "out_lit": 26,
+      "mechanism": "dual-polarity",
+      "shared_gates": [
+        {
+          "gate_idx": 2,
+          "depth": 0,
+          "pi_inputs": [
+            3,
+            4,
+            5
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        },
+        {
+          "gate_idx": 3,
+          "depth": 0,
+          "pi_inputs": [
+            0,
+            1,
+            2
+          ],
+          "polarity_type": "dual-polarity",
+          "ref_count": 2
+        }
+      ],
+      "template_details": [
+        {
+          "combiner_idx": 6,
+          "shared_node": 9,
+          "shared_name": "g2",
+          "inflection": "XOR"
+        },
+        {
+          "combiner_idx": 6,
+          "shared_node": 10,
+          "shared_name": "g3",
+          "inflection": "XOR"
+        }
+      ]
+    }
+  ]
+}
