@@ -3,6 +3,12 @@
 If a function has n essential variables and gap = 1, then its optimal
 circuit size is at least n.
 
+For the argument behind it, see docs/threshold_law_proof.md: counting input
+incidences in a non-tree optimum gives 2m = I_var + I_gate >= n + m, hence
+m >= n. That form is slightly stronger than the statement above -- it holds
+for any non-tree optimal circuit, with no reference to the gap -- and it
+avoids the case split where the published proof was short.
+
 Usage:
     python scripts/verify_threshold.py
 """

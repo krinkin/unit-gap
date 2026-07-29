@@ -44,6 +44,8 @@ python scripts/verify_threshold.py
 
 Verifies that every gap=1 function satisfies `opt(f) >= n_essential(f)`. Tests 3,122 gap=1 functions across n=3 and n=4 with 0 violations.
 
+The argument behind the law is in [`docs/threshold_law_proof.md`](docs/threshold_law_proof.md): an incidence count over a non-tree optimum, which also covers the input-level case where the published proof fell one short.
+
 ### 3. Tree Theorem
 
 ```bash
