@@ -1,7 +1,9 @@
-"""Verify the Threshold Law: gap(f) = 1 implies opt(f) >= n_essential(f).
+"""Verify the Threshold Law: gap(f) >= 1 implies opt(f) >= n_essential(f).
 
-If a function has n essential variables and gap = 1, then its optimal
-circuit size is at least n.
+If a function has n essential variables and no optimal circuit of it is a tree,
+then its optimal circuit size is at least n. Stated for gap >= 1 rather than gap = 1:
+the incidence argument only needs some optimum to be a non-tree, and gap = 1 would
+skip the functions of gap 2 and 3.
 
 For the argument behind it, see docs/threshold_law_proof.md: counting input
 incidences in a non-tree optimum gives 2m = I_var + I_gate >= n + m, hence
@@ -22,7 +24,7 @@ sys.path.insert(0, '.')
 def main():
     print("=" * 60)
     print("THRESHOLD LAW VERIFICATION")
-    print("gap(f) = 1 ==> opt(f) >= n_essential(f)")
+    print("gap(f) >= 1 ==> opt(f) >= n_essential(f)")
     print("=" * 60)
 
     total_gap1 = 0
@@ -33,7 +35,7 @@ def main():
             data = json.load(f)
 
         functions = data['functions']
-        gap1_funcs = [func for func in functions if func['gap'] == 1]
+        gap1_funcs = [func for func in functions if func['gap'] >= 1]
 
         violations = []
         for func in gap1_funcs:
@@ -44,7 +46,7 @@ def main():
         total_violations += len(violations)
 
         print(f"\n--- n={n} ---")
-        print(f"  Gap=1 functions: {len(gap1_funcs)}")
+        print(f"  Functions with gap >= 1: {len(gap1_funcs)}")
 
         # Distribution of (opt, n_essential) for gap=1
         opt_ess = {}
@@ -63,15 +65,15 @@ def main():
             for v in violations[:5]:
                 print(f"    tt={v['tt']}: opt={v['opt']}, n_ess={v['n_essential']}")
         else:
-            print(f"  VERIFIED: 0 violations in {len(gap1_funcs)} gap=1 functions")
+            print(f"  VERIFIED: 0 violations in {len(gap1_funcs)} functions with gap >= 1")
 
     # Tightness: functions where opt = n_essential exactly
     print(f"\n{'=' * 60}")
-    print("TIGHTNESS (opt = n_essential at gap=1):")
+    print("TIGHTNESS (opt = n_essential at gap >= 1):")
     for n, filename in [(3, 'data/n3_complete.json'), (4, 'data/n4_complete.json')]:
         with open(filename) as f:
             data = json.load(f)
-        gap1 = [func for func in data['functions'] if func['gap'] == 1]
+        gap1 = [func for func in data['functions'] if func['gap'] >= 1]
         tight = [func for func in gap1 if func['opt'] == func['n_essential']]
         if gap1:
             print(f"  n={n}: {len(tight)}/{len(gap1)} tight "
@@ -79,7 +81,7 @@ def main():
 
     print(f"\n{'=' * 60}")
     print(f"RESULT: Threshold Law holds.")
-    print(f"  Total gap=1 tested: {total_gap1}")
+    print(f"  Total functions with gap >= 1 tested: {total_gap1}")
     print(f"  Violations: {total_violations}")
     print("=" * 60)
 

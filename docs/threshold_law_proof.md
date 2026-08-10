@@ -1,11 +1,11 @@
 # The Threshold Law: a proof by incidence counting
 
-`scripts/verify_threshold.py` checks the Threshold Law empirically on 3,122 functions.
+`scripts/verify_threshold.py` checks the Threshold Law empirically on 4,930 functions.
 This note gives the argument behind it.
 
 ## Statement
 
-> **Claim.** If `f` has `n` essential variables and `gap(f) = 1`, then `opt(f) = m >= n`.
+> **Claim.** If `f` has `n` essential variables and `gap(f) >= 1`, then `opt(f) = m >= n`.
 
 The proof below establishes something slightly stronger, which is worth stating separately
 because it does not mention the gap at all:
@@ -13,8 +13,8 @@ because it does not mention the gap at all:
 > **Claim'.** If `C` is a size-optimal single-output AIG for `f`, `f` has `n` essential
 > variables, and `C` is not a tree, then `|C| >= n`.
 
-The Threshold Law follows: `gap(f) = 1` forces any optimal circuit to be a non-tree, since
-a tree optimum would give `tree_UB(f) <= |C| = opt(f)` and hence `gap(f) = 0`.
+The Threshold Law follows: `gap(f) >= 1` forces every optimal circuit to be a non-tree, since
+a tree optimum `C` would give `tree(f) <= |C| = opt(f)` and hence `gap(f) = 0`.
 
 ## Proof
 
