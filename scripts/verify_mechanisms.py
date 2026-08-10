@@ -72,6 +72,9 @@ def merge_results(r1, r2, label):
 
 
 def main():
+    print("NOTE: the n=5,6,7 circuits below were selected as gap=1 under the tree_ub recurrence "
+          "that has since been corrected; the population is not known to be the gap>=1 population. "
+          "See README.md.\n")
     print("=" * 60)
     print("SHARING MECHANISM VOCABULARY VERIFICATION")
     print("=" * 60)

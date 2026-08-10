@@ -41,18 +41,18 @@ def main():
         by_opt = {}
         for func in low_opt:
             opt = func['opt']
-            by_opt.setdefault(opt, {'total': 0, 'gap0': 0, 'gap1': 0})
+            by_opt.setdefault(opt, {'total': 0, 'gap0': 0, 'gappos': 0})
             by_opt[opt]['total'] += 1
             if func['gap'] == 0:
                 by_opt[opt]['gap0'] += 1
             else:
-                by_opt[opt]['gap1'] += 1
+                by_opt[opt]['gappos'] += 1
 
-        print(f"  {'opt':>4} {'total':>6} {'gap=0':>6} {'gap=1':>6}")
+        print(f"  {'opt':>4} {'total':>6} {'gap=0':>6} {'gap>0':>6}")
         print(f"  {'-'*4} {'-'*6} {'-'*6} {'-'*6}")
         for opt in sorted(by_opt):
             b = by_opt[opt]
-            print(f"  {opt:>4} {b['total']:>6} {b['gap0']:>6} {b['gap1']:>6}")
+            print(f"  {opt:>4} {b['total']:>6} {b['gap0']:>6} {b['gappos']:>6}")
 
         if violations:
             print(f"\n  *** {len(violations)} VIOLATIONS ***")
@@ -65,16 +65,16 @@ def main():
         with open(filename) as f:
             data = json.load(f)
         opt4 = [func for func in data['functions'] if func['opt'] == 4]
-        gap1_at_4 = [func for func in opt4 if func['gap'] == 1]
+        gap1_at_4 = [func for func in opt4 if func['gap'] >= 1]
         if opt4:
-            print(f"  n={n}, opt=4: {len(gap1_at_4)}/{len(opt4)} gap=1 "
+            print(f"  n={n}, opt=4: {len(gap1_at_4)}/{len(opt4)} gap>=1 "
                   f"({100*len(gap1_at_4)/len(opt4):.1f}%)")
 
     print(f"\n{'=' * 60}")
     print(f"RESULT: Tree Theorem holds.")
     print(f"  Total functions with opt <= 3: {total_tested}")
     print(f"  All have gap = 0 (optimal tree circuit exists)")
-    print(f"  Gap=1 first appears at opt = 4")
+    print(f"  A positive gap first appears at opt = 4")
     print("=" * 60)
 
 

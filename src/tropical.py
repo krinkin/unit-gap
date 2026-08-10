@@ -8,6 +8,11 @@ This module:
 2. Analyzes the gap between tropical (tree) and exact solutions
 3. Studies the fixed-point structure of the tropical Bellman operator
 4. Formulates the transition matrix for tropical iteration
+
+CORRECTION 2026-08-10. The equation below is the tree (formula) recurrence, and it is exact for
+tree. It is NOT satisfied by opt: once gates are shared an optimum for the whole does not restrict
+to optima on its parts. Evaluating it once against an exact opt table -- what the data files used
+to call tree_ub -- bounds nothing. See README.md and scripts/tree_exact.py.
 """
 
 from __future__ import annotations
@@ -64,7 +69,7 @@ def tropical_polynomial(f_tt: int, n_inputs: int, opt_data: dict[int, int]) -> d
     """Compute the tropical polynomial T(f) = min_{decomps}[1 + opt(a) + opt(b)].
 
     Returns dict with:
-      - value: the tropical minimum (tree upper bound)
+      - value: the tropical minimum (one Bellman step applied to opt (not a bound on tree))
       - n_terms: number of decomposition terms
       - n_minimizers: number of terms achieving the minimum
       - all_costs: sorted list of all tree costs
@@ -106,7 +111,7 @@ def tropical_bellman_operator(opt_current: dict[int, int], n_inputs: int) -> dic
     F(v)(f) = min_{a,b: f=AND(a,b) or NAND}[1 + v(a) + v(b)]
 
     Starting from any upper bound v, repeated application converges
-    to the tree upper bound (without sharing).
+    to the one Bellman step applied to opt (not a bound on tree) (without sharing).
     """
     n_rows = 1 << n_inputs
     mask = (1 << n_rows) - 1

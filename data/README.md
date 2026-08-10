@@ -2,7 +2,7 @@
 
 ## n3_complete.json / n4_complete.json
 
-Complete gap analysis for all non-trivial Boolean functions at n=3 (248 functions) and n=4 (20,660 functions with opt <= 6).
+Gap analysis for all 248 non-trivial functions at n=3 and for the 20,660 functions of opt <= 6 at n=4. The n=4 file is not the full 65,536: it omits every function of opt >= 7, which is where the largest gaps are (parity-4 has opt 9, tree 15, gap 6).
 
 **Top-level fields:**
 - `n` (int): number of input variables
@@ -13,10 +13,22 @@ Complete gap analysis for all non-trivial Boolean functions at n=3 (248 function
 **Function record fields:**
 - `tt` (int): truth table as integer (bit i = f(i), LSB = x_0)
 - `opt` (int): minimum number of AND gates in any AIG computing f
-- `tree_ub` (int): tree upper bound = min over AND/NAND decompositions of [1 + opt(a) + opt(b)]
-- `gap` (int): tree_ub - opt (always 0 or 1)
+- `tree` (int): minimum number of AND gates in a *formula* for f -- a circuit in which every
+  gate has fan-out exactly 1. Exact, not a bound. Computed by `scripts/tree_exact.py`.
+- `gap` (int): `tree - opt`. Takes the values 0, 1, 2 and 3 in these files.
 - `n_essential` (int): number of essential (non-redundant) input variables
 - `npn_rep` (int): truth table of the NPN canonical representative
+
+**Changed 2026-08-10.** The field was `tree_ub`: `min over f = AND(a, b) of [1 + opt(a) + opt(b)]`
+evaluated once against the exact `opt` table -- the DAG measure `opt` in the children where the
+formula measure needs `tree`. Its values sat below the true `tree` for 2296 of the 20660 records
+at n = 4 and 18 of the 248 at n = 3, so on those it was not an upper bound at all. `gap_distribution`
+was recomputed: n = 3 `{0: 222, 1: 26}` -> `{0: 206, 1: 40, 3: 2}`, n = 4
+`{0: 17564, 1: 3096}` -> `{0: 15772, 1: 4384, 2: 352, 3: 152}`.
+
+**The n = 5, 6 and 7 files below are not corrected.** Their circuits were selected as gap = 1
+under the old recurrence, and the exact computation does not reach that far. Read them as
+circuits with sharing, not as gap = 1 functions.
 
 ## n5_gap1_circuits.json
 
